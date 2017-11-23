@@ -1,0 +1,18 @@
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+    <!-- Configuration for the default package. -->
+    <package name="default" extends="struts-default">
+        <action name="register"
+                class="com.activedge.image.action.UploadAction"
+                method="execute">
+                   
+            <result name="success">/WEB-INF/pages/view/uploadsuccess.jsp</result>
+            <result name="error">/WEB-INF/pages/view/uploaderror.jsp</result>
+            
+        </action> 
+        
+    </package>
+</struts>
